@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/fullpage.css') }}" />
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style-index.css') }}" />    <!-- Main style CSS -->
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}" />
-        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/styles.css') }}" />         <!-- Gallery style CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('style.css') }}" />         <!-- Gallery style CSS -->
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/reset.css') }}" />
 
         <script

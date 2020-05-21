@@ -4,12 +4,13 @@
     <head>
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/fullpage.css') }}" />
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style-index.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />              <!-- Temp style -->
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}" />
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous">
-		</script>		
+		</script>
 		<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 		<script type="text/javascript" src="{{ URL::asset('js/fullpage.js') }}"></script>
 		<script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
@@ -28,13 +29,13 @@
 					<a class="header-item" href="/#about">Over ons</a>
 					<a class="header-item" href="/#contact">Contact</a>
 				</div>
-			</div>			
+			</div>
 			<div class="header-line">
-				
+
 			</div>
         </div>
-        
-		
+
+
         <div id="fullpage">
 
             <!-- WELCOME section -->
@@ -44,22 +45,22 @@
 						<h1>Product-<br><br>groepen</h1>
 					</div>
 					<div id="parallelogram-line-left">
-					
+
 					</div>
 					<div id="parallelogram-image-left">
-					
+
 					</div>
 					<div id="parallelogram-image-right">
-					
+
 					</div>
 					<div id="parallelogram-line-right">
-					
+
 					</div>
 					<div id="trapezoid-right">
-					
+
 					</div>
 				</div>
-				
+
 				<div class="welcome-title">
 					<h1>De verassende Non Food Company</h1>
 				</div>
@@ -79,32 +80,34 @@
 						Voor meer informatie kijk snel verder op deze pagina of neem contact met ons op.<br>
 					</p>
 				</div>
-				
+
             </div>
-			
+
 			<!-- TOOLS section -->
 			<div class="section" id="section1">
-				
+				<div class="section-image">
+
+                </div>
 			</div>
-			
+
             <!-- FASHION section -->
             <div class="section"  id="section2">
-                
+
             </div>
 
             <!-- ABOUT US section -->
 			<div class="section" id="section3">
-				
+
 			</div>
-			
+
 			<!-- CONTACT section -->
             <div class="section"  id="section4">
-                
+
             </div>
 
             <!-- FOOTER section -->
             <div class="section fp-auto-height" id="section5">
-                
+
             </div>
 
         </div>
@@ -120,7 +123,7 @@
 			//height: ;
 			verticalCentered: false,
             lazyLoad: true,
-			onLeave: function(index, nextIndex, direction){        
+			onLeave: function(index, nextIndex, direction){
                   //console.log(nextIndex);
                 if(nextIndex.index == 0){
 					$('.header-div').css('height', '125px');
@@ -135,6 +138,6 @@
                 }
 			}
 		});
-    </script>    
+    </script>
 
 </html>
