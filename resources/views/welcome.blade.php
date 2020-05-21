@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--<a class="header-item" href="/#welcome">Welkom</a>
-					<a class="header-item" href="/#tools">Gereedschap</a>
-					<a class="header-item" href="/#fashion">Fashion</a>
-					<a class="header-item" href="/#about">Over ons</a>
-					<a class="header-item" href="/#contact">Contact</a> -->
+
 <html>
     <head>
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/fullpage.css') }}" />
@@ -23,28 +19,36 @@
     </head>
 
     <body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#">Navbar</a>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+		  <a class="navbar-brand" href="#">
+		  	<img src="{{ URL::asset('Image/HestaLogo4.png') }}">
+		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
-
+<!--<a class="header-item" href="/#welcome">Welkom</a>
+					<a class="header-item" href="/#tools">Gereedschap</a>
+					<a class="header-item" href="/#fashion">Fashion</a>
+					<a class="header-item" href="/#about">Over ons</a>
+					<a class="header-item" href="/#contact">Contact</a> -->
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="/#welcome">Welkom <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
+		        <a class="nav-link" href="/#tools">Gereedschap</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Disabled</a>
+		        <a class="nav-link" href="/#fashion">Fashion</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/#about">Over Ons</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/#contact">Contact</a>
 		      </li>
 		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
 		  </div>
 		</nav>
 
@@ -134,6 +138,7 @@
             menu: '#menu',
 			//paddingTop: '129px',
 			//height: ;
+			responsive: 1000,
 			verticalCentered: false,
             lazyLoad: true,
 			onLeave: function(index, nextIndex, direction){
