@@ -99,7 +99,19 @@
 			<!-- TOOLS section -->
 			<div class="section" id="section1">
 				<div class="section-image">
+                    <img src="{{ asset('/Image/Gamma.jpg') }}">
+                    <div class="image-overlay">
 
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h1>Gereedschap</h1>
+                </div>
+                <div class="section-text">
+                    <p>
+                        Wij beschikken over een scherp geprijsd assortiment impulsgereedschap met
+                        verassend veel presentatie mogelijkheden. Van mixbakken tot draadmanden en molens.
+                    </p>
                 </div>
 			</div>
 
