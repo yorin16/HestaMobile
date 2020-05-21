@@ -3,3 +3,15 @@
     height: 40vh;
     background-color: green;
 }
+
+
+.header{
+	height:200px;
+}
+
+.header-div{
+	height:100%;
+}
+.header-image-link img{
+	height:100px;
+}
