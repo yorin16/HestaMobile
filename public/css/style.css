@@ -50,6 +50,13 @@
 .header-div{
 	height:100%;
 }
-.header-image-link img{
-	height:100px;
+.navbar-brand img{
+	height:55px;
+}
+
+.navbar-dark{
+	background-color: black !important;
+}
+.bg-custom{
+	background-color: black !important;
 }
