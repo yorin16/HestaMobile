@@ -1,3 +1,14 @@
+@font-face{
+    font-family: 'Chicago';
+    src: url('Chicago.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*---------------------------------*/
+/*-------- TOOLS & FASHION --------*/
+/*---------------------------------*/
+
 .section-image {
     width: 100%;
     height: 40%;
@@ -11,13 +22,32 @@
 }
 
 .image-overlay {
-    width: 80%;
+    width: 70%;
     height: 6%;
     background-color: rgba(0,0,0,0.6);
     position: absolute;
     right: 0px;
     bottom: calc(60% + 4px + 10px);
     transform: translate(20px) skew(-20deg);
+}
+
+.image-overlay h1 {
+    font-family: Chicago;
+    color: white;
+    font-size: 20pt;
+    transform: skew(20deg);
+    margin: 7px auto auto 20px;
+}
+
+.arrowRight {
+    height: 30px;
+    width: 30px;
+    background: #FE04CC;
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    clip-path: polygon(22% 0, 62% 50%, 22% 100%, 0% 100%, 40% 50%, 0 0);
+    transform: skew(20deg);
 }
 
 .section-header {
@@ -41,7 +71,9 @@
     font-size: 10pt;
 }
 
+/*------------------------*/
 /*-------- HEADER --------*/
+/*------------------------*/
 
 .header{
 	height:200px;
@@ -59,4 +91,65 @@
 }
 .bg-custom{
 	background-color: black !important;
+}
+
+/*-------------------------*/
+/*-------- PRODUCT --------*/
+/*-------------------------*/
+.product-body {
+    background-color: #807C7C
+}
+
+.product-image-container h2 {
+    font-family: Chicago;
+    font-size: 15pt;
+    color: white;
+    width: 50vw;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.product-header {
+    width: 100%;
+    height: 55px;
+    background-color: black;
+}
+
+.product-title {
+    width: 100%;
+    height: 110px;
+    background-color: #333333;
+    padding-top: 12px;
+}
+
+.product-title h1 {
+    font-family: Chicago;
+    font-size: 25pt;
+    color: white;
+    text-align: center;
+}
+.product-image {
+    width: 50%;
+    height: 50vw;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.product-image img{
+    height: 100%;
+}
+
+.product-image-container {
+    width: 100%;
+    height: 50vw;
+}
+
+#product-image-left {
+    float: left;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 85% 50%, 100% 75%, 100% 100%, 0% 100%);
+}
+
+#product-image-right {
+    float: right;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 15% 50%, 0% 25%);
 }

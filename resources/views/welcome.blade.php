@@ -105,7 +105,10 @@
 				<div class="section-image">
                     <img src="{{ asset('/Image/Gamma.jpg') }}">
                     <div class="image-overlay">
+                        <h1>Assortiment</h1>
+                        <div class="arrowRight" id="tools-arrowRight">
 
+                        </div>
                     </div>
                 </div>
                 <div class="section-header">
@@ -121,12 +124,40 @@
 
             <!-- FASHION section -->
             <div class="section"  id="section2">
+                <div class="section-image">
+                    <img src="{{ asset('/Image/Bruna.jpg') }}">
+                    <div class="image-overlay">
+                        <h1>Assortiment</h1>
+                        <div class="arrowRight" id="fashion-arrowRight">
 
+                        </div>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h1>Fashion</h1>
+                </div>
+                <div class="section-text">
+                    <p>
+                        Wij beschikken over een scherp geprijsd assortiment impulsgereedschap met
+                        verassend veel presentatie mogelijkheden. Van mixbakken tot draadmanden en molens.
+                    </p>
+                </div>
             </div>
 
             <!-- ABOUT US section -->
 			<div class="section" id="section3">
-
+                <div class="section-image">
+                    <img src="{{ asset('/Image/Hesta busjes.jpg') }}">
+                </div>
+                <div class="section-header">
+                    <h1>Over ons</h1>
+                </div>
+                <div class="section-text">
+                    <p>
+                        Wij beschikken over een scherp geprijsd assortiment impulsgereedschap met
+                        verassend veel presentatie mogelijkheden. Van mixbakken tot draadmanden en molens.
+                    </p>
+                </div>
 			</div>
 
 			<!-- CONTACT section -->
@@ -144,8 +175,15 @@
 
     <script type="text/javascript" src="{{ URL::asset('js/fullpage.js') }}"></script>
     <script type="text/javascript">
+        $("#tools-arrowRight").click(function(){
+            window.location.replace("/toolsProducts");
+        });
+        $("#fashion-arrowRight").click(function(){
+            window.location.replace("/toolsFashion");
+        });
+
         var fullpage = new fullpage('#fullpage', {
-            sectionsColor: 	['#807C7C', 	'#333333', 	'white',	'#333333',	'white',	'#000000'],
+            sectionsColor: 	['#807C7C', '#333333', 	'#333333',	'#333333',	'white',	'#000000'],
             anchors: 		['welcome', 'tools', 	'fashion', 	'about',	'contact',	'footer'],
             menu: '#menu',
 			//paddingTop: '129px',
